@@ -133,4 +133,25 @@ nav{
         color: #659FA0 !important;
         opacity: 100%;
     }
+
+    .block1-brand{
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .block1-brand{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .block1-text{
+        font-size: 0.8rem;
+    }
+
+    .block1-start-btn{
+        font-size: 1.2rem;
+    }
 }
