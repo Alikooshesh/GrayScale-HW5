@@ -30,7 +30,7 @@ nav{
 
 .nav-text{
     opacity: 30%;
-    color: #fff !important;
+    color: #fff;
 }
 
 .brand-name{
@@ -50,6 +50,10 @@ nav{
 .nav-item:hover{
     color: rgb(177, 177, 177) !important;
     opacity: 100%;
+}
+
+header{
+    height: 100vh;
 }
 
 .block-1{
@@ -95,6 +99,24 @@ nav{
     margin-top: 3rem;
 }
 
+.block-2{
+    background: linear-gradient(0deg, rgba(65,65,65,1) 0%, rgba(19,19,19,1) 48%);
+    height: 100vh;
+}
+
+.block2-title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.block2-text{
+    width: 50vw;
+    text-align: center;
+    font-size: 1.35rem;
+    padding-bottom: 3rem;
+    opacity: 60%;
+}
+
 @media only screen and (min-width: 992px) {
     .navbar-btns{
         align-items: center;
@@ -115,8 +137,8 @@ nav{
     }
     
     nav{
-        padding-left: 3%;
-        padding-right: 0;
+        padding-left: 7%;
+        padding-right: 5%;
     }
 
     .brand-name{
@@ -139,9 +161,26 @@ nav{
         letter-spacing: 1rem;
     }
 
+    .block-2{
+        height: 75vh;
+    }
+
+    .block2-text{
+        width: 75vw;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
+    nav{
+        padding-left: 3%;
+        padding-right: 0;
+    }
+
+    header{
+        height: 60vh !important;
+    }
+
     .block1-brand{
         font-size: 2rem;
         letter-spacing: 0.5rem;
@@ -153,5 +192,18 @@ nav{
 
     .block1-start-btn{
         font-size: 1.2rem;
+    }
+
+    .block-2{
+        height: 50vh;
+    }
+
+    .block2-title{
+        font-size: 1.5rem;
+    }
+
+    .block2-text{
+        width: 90vw;
+        font-size: 1rem;
     }
 }
