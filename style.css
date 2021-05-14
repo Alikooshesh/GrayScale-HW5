@@ -158,6 +158,49 @@ header{
     height: 0.5rem;
 }
 
+.block-4{
+    width: 5rem;
+    position: relative;
+}
+
+.block4-bg{
+    position: absolute;
+    z-index: -1;
+}
+
+.block4-parts{
+    background-color: rgba(0, 0, 0, 0.486);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.fa-telegram-plane , .block4-text{
+    font-size: 3rem;
+}
+
+.block4-sub-btn{
+    background-color: #659FA0;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0.1rem solid transparent;
+    height: 4rem;
+}
+
+.block4-sub-input{
+    width: 40rem;
+    height: 4rem;
+    outline: none;
+    border: 0.1rem solid transparent;
+    font-size: 1.3rem;
+}
+
+.block4-sub-input::placeholder{
+    color: rgba(0, 0, 0, 0.233);
+}
+
 @media only screen and (min-width: 992px) {
     .navbar-btns{
         align-items: center;
@@ -247,6 +290,11 @@ header{
         display: none;
     }
 
+    .block4-sub-div{   
+    width: 80vw;
+
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -287,5 +335,25 @@ header{
 
     .block3-parts{
         width: 95% !important;
+    }
+
+    .block4-parts{
+        height: 50vh;
+        padding-top: 1rem !important;
+        padding-bottom: 0 !important;
+    }
+
+    .block4-text{
+        font-size: 2rem;
+    }
+
+    .block4-sub-div{
+        flex-direction: column;
+    }
+
+    .block4-sub-input{
+        width: 80vw;
+        margin-bottom: 1rem;
+        font-size: 1rem;
     }
 }
