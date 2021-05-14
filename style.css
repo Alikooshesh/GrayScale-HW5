@@ -76,9 +76,11 @@ header{
     letter-spacing: 1.2rem;
     background: linear-gradient(0deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0 !important;
 }
+
 
 .block1-text{
     margin: 0;
@@ -115,6 +117,45 @@ header{
     font-size: 1.35rem;
     padding-bottom: 3rem;
     opacity: 60%;
+}
+
+.block-3{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(236, 236, 236);
+}
+
+.block3-parts{
+    width: 80%;
+}
+
+.block3-big-post{
+    margin-bottom: 1rem;
+    height: 10rem;
+}
+
+.block3-bigPost-text{
+    border-left: 0.5rem solid #659FA0;
+    font-size: 0.8rem;
+    justify-content: left;
+    color: black;
+}
+
+.block3-bigPost-text p{
+    font-size: 2rem;
+}
+
+.block3-Post-text-div{
+    background-color: black;
+}
+
+.block3-Post-text p{
+    font-size: 1.5rem;
+}
+
+.block3-post-text-underline{
+    background-color: #659FA0;
+    height: 0.5rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -169,6 +210,43 @@ header{
         width: 75vw;
     }
 
+    .block3-big-post , .block3-post{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block3-bigPost-img , .block3-Post-img{
+        width: 100% !important;
+    }
+
+    .block3-bigPost-text-div , .block3-Post-text-div{
+        text-align: center !important;
+        width: 100% !important;
+        padding-top: 2rem;
+    }
+
+    .block3-bigPost-text , .block3-Post-text{
+        border-color: transparent;
+        width: 90%;
+    }
+
+    .block3-Post-text-div{
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .block3-Post-text{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .block3-post-text-underline{
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -205,5 +283,9 @@ header{
     .block2-text{
         width: 90vw;
         font-size: 1rem;
+    }
+
+    .block3-parts{
+        width: 95% !important;
     }
 }

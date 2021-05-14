@@ -1,3 +1,6 @@
+var element = document.getElementById("test")
+var rect = element.getBoundingClientRect();
+
 window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
 
@@ -13,4 +16,4 @@ window.onscroll = function() {
         $(".nav-text").css('color', '#fff');
         
     }
-  }
+}
