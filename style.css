@@ -201,6 +201,41 @@ header{
     color: rgba(0, 0, 0, 0.233);
 }
 
+.block-5{
+background-color: rgba(0, 0, 0, 0.945);
+}
+
+.block5-contact-box{
+    border-bottom: 0.25rem solid #659FA0;
+}
+
+.block5-contact-icon{
+    color: #659FA0;
+    font-size: 1.5rem;
+}
+
+.block5-contact-title{
+    border-bottom: 0.25rem solid #659FA0;
+}
+
+.block5-contact{
+    width: 25%;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.block5-contact-email{
+    color: #659FA0;
+}
+
+.block5-social{
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(54, 54, 54, 0.281);
+    font-size: 2rem;
+}
+
 @media only screen and (min-width: 992px) {
     .navbar-btns{
         align-items: center;
@@ -295,6 +330,10 @@ header{
 
     }
 
+    .block5-contact-text{
+        font-size: 0.6rem;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -354,6 +393,24 @@ header{
     .block4-sub-input{
         width: 80vw;
         margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .block5-contact-div{
+        flex-direction: column;
+    }
+
+    .block5-contact-box{
+        width: 90% !important;
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .block5-social-div{
+        width: 50% !important;
+    }
+
+    .block5-contact-text{
         font-size: 1rem;
     }
 }
